@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Angelis</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!--cdncss link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/lightbox.min.css">
+
+  <!--style sheet-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    a:link, a:visited {
+      background-color: #0d0101;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: rgb(220, 119, 119);
+    }
+    </style>
+
+
+</head>
+
+<body>
+  <!--svg icons-->
+  <svg>
+
+    <symbol id="whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M16.6 14c-.2-.1-1.5-.7-1.7-.8c-.2-.1-.4-.1-.6.1c-.2.2-.6.8-.8 1c-.1.2-.3.2-.5.1c-.7-.3-1.4-.7-2-1.2c-.5-.5-1-1.1-1.4-1.7c-.1-.2 0-.4.1-.5c.1-.1.2-.3.4-.4c.1-.1.2-.3.2-.4c.1-.1.1-.3 0-.4c-.1-.1-.6-1.3-.8-1.8c-.1-.7-.3-.7-.5-.7h-.5c-.2 0-.5.2-.6.3c-.6.6-.9 1.3-.9 2.1c.1.9.4 1.8 1 2.6c1.1 1.6 2.5 2.9 4.2 3.7c.5.2.9.4 1.4.5c.5.2 1 .2 1.6.1c.7-.1 1.3-.6 1.7-1.2c.2-.4.2-.8.1-1.2zm2.5-9.1C15.2 1 8.9 1 5 4.9c-3.2 3.2-3.8 8.1-1.6 12L2 22l5.3-1.4c1.5.8 3.1 1.2 4.7 1.2c5.5 0 9.9-4.4 9.9-9.9c.1-2.6-1-5.1-2.8-7m-2.7 14c-1.3.8-2.8 1.3-4.4 1.3c-1.5 0-2.9-.4-4.2-1.1l-.3-.2l-3.1.8l.8-3l-.2-.3c-2.4-4-1.2-9 2.7-11.5S16.6 3.7 19 7.5c2.4 3.9 1.3 9-2.6 11.4" />
+    </symbol>
+    <symbol id="github" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M10.07 20.503a1 1 0 0 0-1.18-.983c-1.31.24-2.963.276-3.402-.958a5.708 5.708 0 0 0-1.837-2.415a1.2 1.2 0 0 1-.167-.11a1 1 0 0 0-.93-.645h-.005a1 1 0 0 0-1 .995c-.004.815.81 1.338 1.141 1.514a4.44 4.44 0 0 1 .924 1.36c.365 1.023 1.423 2.576 4.466 2.376l.003.098l.004.268a1 1 0 0 0 2 0l-.005-.318c-.005-.19-.012-.464-.012-1.182M20.737 5.377a5.39 5.39 0 0 0 .09-.42a6.278 6.278 0 0 0-.408-3.293a1.002 1.002 0 0 0-.615-.58c-.356-.12-1.67-.357-4.184 1.25a13.87 13.87 0 0 0-6.354 0C6.762.75 5.455.966 5.102 1.079a.997.997 0 0 0-.631.584a6.3 6.3 0 0 0-.404 3.357c.025.127.051.246.079.354a6.27 6.27 0 0 0-1.256 3.83a8.422 8.422 0 0 0 .043.921c.334 4.603 3.334 5.984 5.424 6.459a4.591 4.591 0 0 0-.118.4a1 1 0 0 0 1.942.479a1.678 1.678 0 0 1 .468-.878a1 1 0 0 0-.546-1.745c-3.454-.395-4.954-1.802-5.18-4.899a6.61 6.61 0 0 1-.033-.738a4.258 4.258 0 0 1 .92-2.713a3.022 3.022 0 0 1 .195-.231a1 1 0 0 0 .188-1.025a3.388 3.388 0 0 1-.155-.555a4.094 4.094 0 0 1 .079-1.616a7.543 7.543 0 0 1 2.415 1.18a1.009 1.009 0 0 0 .827.133a11.777 11.777 0 0 1 6.173.001a1.005 1.005 0 0 0 .83-.138a7.572 7.572 0 0 1 2.406-1.19a4.04 4.04 0 0 1 .087 1.578a3.205 3.205 0 0 1-.169.607a1 1 0 0 0 .188 1.025c.078.087.155.18.224.268A4.122 4.122 0 0 1 20 9.203a7.039 7.039 0 0 1-.038.777c-.22 3.056-1.725 4.464-5.195 4.86a1 1 0 0 0-.546 1.746a1.63 1.63 0 0 1 .466.908a3.06 3.06 0 0 1 .093.82v2.333c-.01.648-.01 1.133-.01 1.356a1 1 0 1 0 2 0c0-.217 0-.692.01-1.34v-2.35a4.882 4.882 0 0 0-.155-1.311a4.256 4.256 0 0 0-.116-.416a6.513 6.513 0 0 0 5.445-6.424A8.697 8.697 0 0 0 22 9.203a6.13 6.13 0 0 0-1.263-3.826" />
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73" />
+    </symbol>
+    <symbol id="linkedin" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 19h-3v-10.5h3v10.5zm-1.5-12.04c-0.97 0-1.75-0.79-1.75-1.75s0.79-1.75 1.75-1.75 1.75 0.79 1.75 1.75-0.79 1.75-1.75 1.75zm12.75 12.04h-3v-5.5c0-0.66-0.54-1.5-1.5-1.5s-1.5 0.83-1.5 1.5v5.5h-3v-10.5h3v1.43c0.91-1.34 2.82-1.43 4.14-1.43 3.34 0 4.36 2.22 4.36 5.14v5.36z"/>
+      </symbol>
+    
+  
+  </svg>
+
+  <header id="top" class="position-sticky top-0 start-0" style="z-index:10;">
+    <nav class="navbar bg-white fixed-top">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center g-4">
+          
+            </a>
+      
+            <a href="https://w.app/Uj4m01" class="text-decoration-none">
+              <svg class="whatsapp" width="24" height="24">
+                <use xlink:href="#whatsapp"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/angelis888" class="text-decoration-none">
+              <svg class="github" width="24" height="24">
+                <use xlink:href="#github"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100066632449814" class="text-decoration-none">
+              <svg class="facebook" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/angelis-vanessa-rodriguez-do-cova-alvarez-systems-engineer-b4878397/" class="text-decoration-none">
+              <svg class="linkedin" width="24" height="24">
+                <use xlink:href="#linkedin"></use>
+              </svg>
+            </a>
+           
+          </div>
+        </div>
+        
+            
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="banner rounded-4 p-5"
+        style="background-image: url(images/banner.png); background-size: cover ; background-repeat: no-repeat; background-position: center;">
+        <div class="text-content text-white py-5 my-5">
+          <p class="fs-4">
+            Systems Engineering
+          </p>
+          <h1 class="display-1">
+            Angelis <br> Rodriguez
+          </h1>
+        </div>
+        <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                10
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                Years of <br> experience
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                22
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                satisfied <br> clients
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                33
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                employees <br> worldwide
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="display-2 text-light">
+                20
+              </h2>
+              <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                projects completed
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-5 ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary monitor" width="50" height="50">
+                <use xlink:href="#monitor"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                Systems Engineer
+              </h5>
+              <p class="postf">
+                As a systems engineer, I excel at managing the entire software development lifecycle, from design to implementation, ensuring efficient and scalable solutions. My experience in frontend and backend development, coupled with my leadership experience, make me a versatile and reliable asset to any team.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary notes" width="50" height="50">
+                <use xlink:href="#notes"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                Complex problem solving
+              </h5>
+              <p class="postf">
+                 Systems engineers have the ability to analyze technical problems and develop efficient and scalable solutions. Identify bottlenecks and inefficient areas, implementing solutions that improve system performance and reduce unnecessary resource usage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary laptop" width="50" height="50">
+                <use xlink:href="#laptop"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                Managing emotions in decision making
+              </h5>
+              <p class="postf">
+                A good leader not only manages projects, but also people. Emotional intelligence allows you to manage your emotions well and creates a more harmonious and productive work environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="h-100 bg-yellow p-4 rounded-4">
+            <h3>
+              Education
+            </h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">
+                1992 - 2007
+              </p>
+              <h5>
+                Bachelors of Science
+              </h5>
+              <p class="text-dark-emphasis">
+                Maria Teresa del Toro
+              </p>
+            </div>
+            <p class="text-dark-emphasis">
+              2008 – 2013
+            </p>
+            <h5>
+              Systems Engineering
+
+            </h5>
+            <p class="text-dark-emphasis">
+              National Experimental Polytechnic University of the Armed Forces (UNEFA)
+
+            </p>
+
+            <h3>
+              Courses
+            </h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">
+                2015 - 2015
+              </p>
+              <h5>
+              Basic Java (CNTI)
+              </h5>
+
+           
+            <p class="text-dark-emphasis">
+              2015 - 2015
+            </p>
+            <h5>
+              Sales (Cones Group)
+            </h5>
+            
+         
+          <p class="text-dark-emphasis">
+            2020 - 2020
+          </p>
+          <h5>
+            Marketing (SEPE)
+          </h5>
+
+        
+        <p class="text-dark-emphasis">
+          2021 - 2021
+        </p>
+        <h5>
+          English B2, SEPE
+        </h5>
+
+      <p class="text-dark-emphasis">
+        2024 - 2024
+      </p>
+      <h5>
+        (AWS Skill Builder) Foundations of Prompt Engineering 
+      </h5>
+
+    
+    <p class="text-dark-emphasis">
+      2024 - 2024
+    </p>
+    <h5>
+      Create app, FlutterFlow 
+    </h5>
+
+  
+  <p class="text-dark-emphasis">
+    2024- 2024
+  </p>
+  <h5>
+    Google ads, Google play store, Google
+  </h5>
+
+</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="h-100 bg-green p-4 rounded-4">
+            <h3>
+              Experiences
+            </h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">
+                February 2012 - September 2012
+                Frontend Developer
+              </p>
+              <h5>
+                Kanobo Web Consult
+              </h5>
+              <p class="text-dark-emphasis">
+                Developed the Venezuelan Thinkers project using Ruby on Rails, MVC, OOP, AngularJS,
+React, HTML5, CSS3, JavaScript, Git, Rails, Heroku, and PostgreSQL.
+Created three modules: category, characters, and fun facts.
+
+            </div>
+            <p class="text-dark-emphasis">
+              2012 - 2013
+              Innovame Media Group
+            </p>
+            <h5>
+              Frontend Developer
+            </h5>
+            <p class="text-dark-emphasis">
+              Created websites with WordPress and programmed in PHP, HTML5, CSS3, AngularJS,
+JavaScript, and jQuery.
+
+Developed adaptive websites using PHP, Bootstrap, HTML, HTML5, CSS, CSS3, AngularJS,
+JavaScript, jQuery, and PostgreSQL
+            </p>
+
+            <p class="text-dark-emphasis">
+             2013 - 2015
+
+            </p>
+            <h5>
+              SAP Analyst
+            </h5>
+            <p class="text-dark-emphasis">
+              Implemented the SAP HR module at PDVSA.
+Detected and reviewed errors, created new
+requirements, and prepared user guides.
+            <p class="text-dark-emphasis">
+              2015 - 2018
+            </p>
+            <h5>
+              CNTI
+            </h5>
+            <p class="text-dark-emphasis">
+              Programmer, Analyst, and Project Leader
+              Automated processes for Venezuelan ministries using
+              BonitaBPM, Alfresco, Apache Tomcat, Liferay, Eclipse,
+              Java, and PostgreSQL.
+              Managed the full system lifecycle: design, coding,
+              testing, and implementation.
+              Researched and applied low-resource technologies
+            </p>
+
+            <p class="text-dark-emphasis">
+              2018 - 2024
+ 
+             </p>
+             <h5>
+               Freelance
+             </h5>
+             <p class="text-dark-emphasis">
+              Created adaptive web pages using OOP, MVC, PHP,
+and Ruby on Rails.
+Frontend development with HTML, HTML5, CSS, CSS3, Angular, React
+and JavaScript.
+Utilized Bootstrap, Glider, Drupal, FlutterFlow and Websim.
+Managed MySQL and PostgreSQL databases.
+
+             <p class="text-dark-emphasis">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="h-100 bg-teal p-4 rounded-4">
+            <h3>
+              Interests
+            </h3>
+            <div class="py-4">
+            
+              <p>
+              Java, PHP and RoR.
+              </p>
+
+            <p>
+              JavaScript, Angular, React, Vue, Typescript, HTML, HTML5, CSS, CSS3 y jquery.
+            </p>
+
+          <p>
+            Leveraging AI to enhance workflows.
+          </p>
+
+
+        <p>
+          I'm also passionate about open source.
+        </p>
+      <p>
+        (AWS Skill Builder).
+      </p>
+
+    <p>
+      FlutterFlow, Glider and Drupal. 
+    </p>
+    <p>
+      Agile methodologies.
+    </p>
+    <p>
+      Aystem management.
+    </p>
+    <p>
+      Object Oriented Programming.
+    </p>
+    <p>
+      MVC.
+    </p>
+
+  <p>
+    Google ads, Google play store, Google cloud console, Google Discover and Google My Business.
+  </p>
+
+  <p>
+    User Experience (UX) and Interaction Design.
+  </p>
+
+  <p>
+    Emerging Technologies and Innovative Trends.
+  </p>
+  <p>
+    Leadership in Technology Projects.
+  </p>
+  <p>
+    Personal and Professional Development through Technology.
+  </p>
+  <p>
+    Emotional Management.
+  </p>
+<p>
+  Process Optimization and Operational Efficiency.
+</p>
+<p>
+  Management of Multidisciplinary Teams.
+</p>
+  <p>
+    Innovation in Disruptive Technologies.
+  </p>
+</div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="rounded-4 p-5"
+        style="background-image: url(images/section-banner.png); background-size: cover ; background-repeat: no-repeat; background-position: center;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="h-100 bg-black text-white p-4 rounded-4">
+              <h4>
+                References
+              </h4>
+              <div class="py-4">
+                <p class="text-light-emphasis">
+                  "The only way to do great work is to love what you do. If you haven't found what you love, keep looking."(Steve Jobs)
+                </p>
+                <p class="text-light-emphasis">
+                  "Life is like an adventure. You have to live it and not let it pass you by." (Anne Frank)
+                </p>
+              </div>
+              <p class="text-light-emphasis">
+                "The greatest glory is not to never fall, but to always rise." (NelsNelson Mandela)
+              </p>
+              <p class="text-light-emphasis">
+                "I don't regret my past, I embrace it." (Frida Kahlo)
+            </p>
+              <p class="text-light-emphasis">
+                "In a world designed for men, being authentically yourself is the most powerful act of resistance and success."(IA)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="display-3">
+          Portfolio
+        </h2>
+      
+      </div>
+      <div class="row py-4">
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/thumb-1.png" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p>
+                  My Up Holder
+                </p>
+                <p class="text-uppercase text-muted mt-3">
+                  It is a website that allows users to find tools for complex moments.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/thumb-2.png" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p>
+                  My Up Holder
+                </p>
+                <p class="text-uppercase text-muted mt-3">
+                  It is a website that allows users to find tools for complex moments.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/thumb-3.png" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                 Astrofisico 
+                </p>
+                <a href="https://www.uv.es/miga/cv.html" target="_blank">Ver</a>
+      
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/thumb-4.png" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Website
+                </p>
+                <p>
+                  Graphic Designing Useful Tips & Best Practices
+                </p>
+                <a href="https://cayamaarquitectos.com/" target="_blank">Ver</a>
+      
+              </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="text-center">
+  <h2 class="display-3 mb-5">
+    Testimonials
+  </h2>
+</div>
+
+<div class="swiper testimonial-swiper">
+  <div class="swiper-wrapper ">
+    <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+      <div class="text-start">
+        <p>
+          "He trabajado junto a Angelis puedo afirmar que su capacidad para colaborar y comunicarse efectivamente con el equipo es excepcional. Su empatía le permite comprender las necesidades de los demás y fomentar un ambiente de trabajo positivo, lo que resulta en soluciones más efectivas y un aumento en la productividad del grupo."
+        </p>
+        <h5>
+          Pal De Vibe.
+        </h5>
+      </div>
+    </div>
+    <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+      <div class="text-start">
+        <p>
+          "Trabajar con Angelis ha sido una experiencia enriquecedora. Su habilidad para escuchar y comprender diferentes perspectivas ha fortalecido nuestro equipo y mejorado nuestra capacidad para enfrentar desafíos. Su enfoque empático no solo contribuye a crear un ambiente colaborativo, sino que también impulsa la innovación en nuestros proyectos."
+        </p>
+        <h5>
+          Manuel Briceño.
+        </h5>
+      </div>
+    </div>
+    <div class="testimonial-card bg-black rounded-3 py-4 px-4 swiper-slide">
+      <div class="text-start">
+        <p>
+          “Tuve la oportunidad de colaborar con Angelis, y su proactividad y empatía fueron un aporte invaluable para el equipo. Angelis posee una sólida base técnica en Java y siempre está dispuesta a aprender y mejorar.
+
+          Su proactividad se destaca en cada proyecto. Angelis toma la iniciativa, busca soluciones creativas y se anticipa a los desafíos. Su empatía crea un ambiente de trabajo positivo y colaborativo, donde todos se sienten escuchados y valorados.
+          
+          Aunque Angelis ya posee buenas habilidades técnicas, su deseo de mejora continua es admirable. Confío en que seguirá desarrollando su potencial en Java y otras áreas."
+        </p>
+        <h5>
+          Juan Martinez.
+        </h5>
+      </div>
+    </div>
+    <div class="testimonial-card bg-black rounded-3 py-4 px-4 swiper-slide">
+      <div class="text-start">
+        <p>
+          “Angelis es una desarrolladora súper talentosa y apasionada. He visto cómo se desenvuelve con Java y también domina la parte de frontend con Angular y JavaScript. Siempre está dispuesta a ayudar y compartir sus conocimientos, lo que la hace genial para trabajar en equipo. Si buscas a alguien con habilidades técnicas sólidas y buena actitud, ella es la indicada.”
+        </p>
+        <h5>
+          Geraldine Bracho.
+        </h5>
+      </div>
+    </div>
+    <div class="testimonial-card  rounded-3 py-4 px-4 swiper-slide">
+      <div class="text-start">
+        <p>
+          "En cuanto al frontend, Angelis Rodriguez domina herramientas y frameworks modernos como React, Angular o Vue.js, y es experto en el uso de HTML5, CSS3 y JavaScript para desarrollar interfaces atractivas y dinámicas. Su atención al detalle en el diseño, junto con su capacidad para trabajar estrechamente con diseñadores y equipos de UX/UI, garantiza que las aplicaciones no solo funcionen bien, sino que también sean visualmente atractivas y fáciles de usar."
+        </p>
+        <h5>
+          Kelly Ybarra.
+        </h5>
+      
+      </div>
+    </div>
+  </div>
+  
+  <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
+</div>
+
+</div>
+</section>
+  
+
+  <footer id="footer" class="bg-black text-white py-5">
+    <div class="container-sm">
+      <div class="row g-md-5 my-5">
+        <div class="col-md-4">
+          <div class="info-box">
+            <p class="py-4">
+              Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
+            </p>
+            <a href="https://w.app/Uj4m01" class="text-decoration-none">
+              <svg class="whatsapp" width="24" height="24">
+                <use xlink:href="#whatsapp"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/angelis888" class="text-decoration-none">
+              <svg class="github" width="24" height="24">
+                <use xlink:href="#github"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100066632449814" class="text-decoration-none">
+              <svg class="facebook" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/angelis-vanessa-rodriguez-do-cova-alvarez-systems-engineer-b4878397/" class="text-decoration-none">
+              <svg class="linkedin" width="24" height="24">
+                <use xlink:href="#linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <p>
+            You can also write or call me
+          </p>
+          <h3>
+            <a href="angelisr.kanobo@gmail.com" class="text-white text-decoration-none">angelisr.kanobo@gmail.com</a>
+          </h3>
+          <h3>(+34) 631617827</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!--cdn link-->
+  <script src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
